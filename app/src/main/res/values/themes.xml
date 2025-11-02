@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    <!-- Base application theme -->
+    <style name="AppCloneMakerTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/hover_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/primary_blue_light</item>
+        <item name="colorSecondaryVariant">@color/primary_blue</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/primary_blue</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        
+        <!-- Background colors -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        
+        <!-- Error colors -->
+        <item name="colorError">@color/error_red</item>
+        <item name="colorOnError">@color/white</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        
+        <!-- Card colors -->
+        <item name="colorPrimaryContainer">@color/bg_gray</item>
+        <item name="colorOnPrimaryContainer">@color/text_primary</item>
+        
+        <!-- Ripple colors -->
+        <item name="colorControlHighlight">@color/ripple_material_light</item>
+        
+        <!-- Button styles -->
+        <item name="materialButtonStyle">@style/Widget.AppCloneMaker.Button</item>
+        
+        <!-- Toolbar style -->
+        <item name="toolbarStyle">@style/Widget.AppCloneMaker.Toolbar</item>
+        
+    </style>
+    
+    <!-- No ActionBar theme -->
+    <style name="AppCloneMakerTheme.NoActionBar" parent="AppCloneMakerTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    
+    <!-- Splash Screen theme -->
+    <style name="AppCloneMakerTheme.Splash" parent="AppCloneMakerTheme.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Custom Button Styles -->
+    <style name="Widget.AppCloneMaker.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/button_primary</item>
+        <item name="rippleColor">@color/button_primary_pressed</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="Widget.AppCloneMaker.Button.Text" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/button_primary</item>
+        <item name="rippleColor">@color/primary_blue_light</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+    
+    <style name="Widget.AppCloneMaker.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/button_primary</item>
+        <item name="android:textColor">@color/button_primary</item>
+        <item name="rippleColor">@color/primary_blue_light</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Custom Toolbar Style -->
+    <style name="Widget.AppCloneMaker.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">@color/primary_blue</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <!-- Search View Style -->
+    <style name="Widget.AppCloneMaker.SearchView" parent="Widget.MaterialComponents.SearchView">
+        <item name="android:background">@color/search_background</item>
+        <item name="queryBackground">@color/search_background</item>
+        <item name="queryHint">@string/search_hint</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="hintTextColor">@color/text_hint</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="searchIcon">@drawable/ic_search</item>
+        <item name="closeIcon">@drawable/ic_close</item>
+    </style>
+
+    <!-- Card View Style -->
+    <style name="Widget.AppCloneMaker.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+
+    <!-- Edit Text Style -->
+    <style name="Widget.AppCloneMaker.EditText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/border_gray</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+    <!-- Dialog Styles -->
+    <style name="Widget.AppCloneMaker.AlertDialog" parent="Theme.MaterialComponents.Dialog.Alert">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/hover_blue</item>
+        <item name="colorAccent">@color/primary_blue</item>
+    </style>
+
+    <!-- RecyclerView Style -->
+    <style name="Widget.AppCloneMaker.RecyclerView">
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:scrollbarThumbVertical">@color/border_gray</item>
+        <item name="android:scrollbarSize">8dp</item>
+    </style>
+
+    <!-- Progress Bar Style -->
+    <style name="Widget.AppCloneMaker.ProgressBar.Horizontal" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressTint">@color/primary_blue</item>
+        <item name="android:progressBackgroundTint">@color/border_gray</item>
+    </style>
+
+    <!-- Floating Action Button Style -->
+    <style name="Widget.AppCloneMaker.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/primary_blue</item>
+        <item name="tint">@color/white</item>
+        <item name="elevation">6dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+    </style>
+
+    <!-- Chip Style -->
+    <style name="Widget.AppCloneMaker.Chip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textColor">@color/white</item>
+        <item name="chipBackgroundColor">@color/bg_gray</item>
+        <item name="chipStrokeColor">@color/border_gray</item>
+        <item name="android:textSize">12sp</item>
+        <item name="chipCornerRadius">16dp</item>
+    </style>
+
+    <!-- Text Appearance Styles -->
+    <style name="TextAppearance.AppCloneMaker.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.AppCloneMaker.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.AppCloneMaker.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.AppCloneMaker.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.AppCloneMaker.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="TextAppearance.AppCloneMaker.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Category specific styles -->
+    <style name="AppCloneMaker.Category.DeviceInfo">
+        <item name="categoryColor">@color/category_device_info</item>
+    </style>
+
+    <style name="AppCloneMaker.Category.LocationPrivacy">
+        <item name="categoryColor">@color/category_location_privacy</item>
+    </style>
+
+    <style name="AppCloneMaker.Category.BuildProperties">
+        <item name="categoryColor">@color/category_build_properties</item>
+    </style>
+
+    <style name="AppCloneMaker.Category.AppData">
+        <item name="categoryColor">@color/category_app_data</item>
+    </style>
+
+    <style name="AppCloneMaker.Category.WebViewPrivacy">
+        <item name="categoryColor">@color/category_webview_privacy</item>
+    </style>
+
+</resources>

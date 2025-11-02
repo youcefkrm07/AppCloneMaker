@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Include app configuration data -->
+        <include domain="sharedpref" path="AppCloneMakerPrefs.xml"/>
+        <include domain="file" path="configs/"/>
+        <include domain="file" path="backups/"/>
+        
+        <!-- Exclude sensitive data -->
+        <exclude domain="sharedpref" path="temp_prefs.xml"/>
+        <exclude domain="file" path="logs/"/>
+        <exclude domain="file" path="temp/"/>
+    </cloud-backup>
+    
+    <device-transfer>
+        <!-- Include user preferences and configuration files -->
+        <include domain="sharedpref" path="AppCloneMakerPrefs.xml"/>
+        <include domain="file" path="configs/"/>
+        
+        <!-- Exclude temporary and cache data -->
+        <exclude domain="file" path="cache/"/>
+        <exclude domain="file" path="temp/"/>
+        <exclude domain="file" path="logs/"/>
+    </device-transfer>
+</data-extraction-rules>

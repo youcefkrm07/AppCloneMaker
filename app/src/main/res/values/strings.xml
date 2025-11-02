@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppCloner Maker</string>
+    <string name="main_title">AppCloner Maker - Floating Editor</string>
+    
+    <!-- Search -->
+    <string name="search_hint">Search features...</string>
+    
+    <!-- Package Info -->
+    <string name="package_label">📦 Package:</string>
+    <string name="package_not_detected">Not detected</string>
+    <string name="split_count_label">🔢 Split Count:</string>
+    <string name="default_split_count">101</string>
+    
+    <!-- Loading and Error States -->
+    <string name="loading_configuration">⏳ Loading configuration...</string>
+    <string name="error_loading">❌ Error loading configuration</string>
+    <string name="error_message_format">❌ Error: %1$s</string>
+    
+    <!-- Actions -->
+    <string name="save_settings">💾 Save Settings</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="load">Load</string>
+    <string name="export">Export</string>
+    <string name="import_config">Import</string>
+    
+    <!-- Editor Dialog -->
+    <string name="edit_setting">Edit Setting</string>
+    <string name="editor_info_text">Additional information about this setting</string>
+    <string name="file_status">File status information</string>
+    
+    <!-- Setting Categories -->
+    <string name="category_device_information">Device Information</string>
+    <string name="category_location_privacy">Location Privacy</string>
+    <string name="category_build_properties">Build Properties</string>
+    <string name="category_app_data">App Data</string>
+    <string name="category_webview_privacy">WebView Privacy</string>
+    <string name="category_system_settings">System Settings</string>
+    <string name="category_install_time">Install Time</string>
+    <string name="category_network">Network</string>
+    <string name="category_extra">Extra</string>
+    
+    <!-- Device Information Settings -->
+    <string name="change_android_id">Change Android ID</string>
+    <string name="change_imei">Change IMEI</string>
+    <string name="change_android_serial">Change Android Serial</string>
+    <string name="change_wifi_mac">Change WiFi MAC Address</string>
+    <string name="change_bluetooth_mac">Change Bluetooth MAC Address</string>
+    <string name="change_imsi">Change IMSI</string>
+    <string name="change_google_ads_id">Change Google Advertising ID</string>
+    <string name="change_google_service_framework_id">Change Google Service Framework ID</string>
+    <string name="change_facebook_attribution_id">Change Facebook Attribution ID</string>
+    <string name="change_app_set_id">Change App Set ID</string>
+    <string name="change_open_id">Change OpenID</string>
+    <string name="change_amazon_ads_id">Change Amazon Advertising ID</string>
+    <string name="change_huawei_ads_id">Change Huawei Advertising ID</string>
+    <string name="change_locale">Change Locale</string>
+    <string name="change_ethernet_mac">Change Ethernet MAC Address</string>
+    
+    <!-- Location Privacy Settings -->
+    <string name="spoof_location">Spoof Location</string>
+    <string name="spoof_location_latitude">Latitude</string>
+    <string name="spoof_location_longitude">Longitude</string>
+    <string name="spoof_random_location">Random Location</string>
+    <string name="spoof_location_use_ip">Use IP Location</string>
+    <string name="spoof_location_api">API</string>
+    <string name="spoof_location_calculate_bearing">Calculate Bearing</string>
+    <string name="spoof_location_compatibility_mode">Compatibility Mode</string>
+    <string name="spoof_location_interval">Interval</string>
+    <string name="spoof_location_share_receiver">Share Location Receiver</string>
+    <string name="spoof_location_show_notification">Show Spoof Location Notification</string>
+    <string name="spoof_location_simulate_uncertainty">Simulate Positional Uncertainty</string>
+    <string name="favorite_locations_show_distance">Show Distance</string>
+    
+    <!-- Build Properties Settings -->
+    <string name="builds_props">Build Properties</string>
+    <string name="build_props_device_name">Device Name</string>
+    <string name="build_props_manufacturer">Manufacturer</string>
+    <string name="build_props_brand">Brand</string>
+    <string name="build_props_model">Model</string>
+    <string name="build_props_product">Product</string>
+    <string name="build_props_device">Device</string>
+    <string name="build_props_board">Board</string>
+    <string name="build_props_radio">Radio</string>
+    <string name="build_props_hardware">Hardware</string>
+    <string name="randomize_build_props">Randomize Build Properties</string>
+    <string name="filter_devices_database">Filter Devices Database</string>
+    <string name="devices_database_filters">Database Filters</string>
+    <string name="devices_database_use_android_version">Use Android Version</string>
+    <string name="devices_database_sdk_versions">SDK Versions</string>
+    <string name="randomize_device_name_prefix">Device Name Prefix</string>
+    
+    <!-- App Data Settings -->
+    <string name="bundle_app_data">Bundle App Data</string>
+    <string name="bundle_app_data_path">App Data Path</string>
+    <string name="bundle_app_data_password">Password</string>
+    <string name="bundle_app_data_encrypt_certificate">Encrypt Certificate</string>
+    <string name="restore_app_data_on_start">Restore App Data on Start</string>
+    <string name="delete_on_exit">Delete Files & Directories on Exit</string>
+    <string name="delete_files_directories_on_exit">Files & Directories</string>
+    <string name="securely_delete_files_directories">Delete Files Securely</string>
+    <string name="bundle_files_directories">Bundle Files Directories</string>
+    <string name="bundle_internal_files_directories">Bundle Internal Files Directories</string>
+    
+    <!-- WebView Privacy Settings -->
+    <string name="webview_privacy_options">WebView Privacy Options</string>
+    <string name="webview_disable_webrtc">Disable WebRTC</string>
+    <string name="webview_disable_webgl">Disable WebGL</string>
+    <string name="webview_disable_audio_context">Disable Audio Context</string>
+    <string name="webview_url_data_monitor">WebView URL Data Monitor</string>
+    <string name="webview_url_data_monitor_auto_copy">Auto Copy</string>
+    <string name="webview_url_data_monitor_auto_open">Auto Open</string>
+    <string name="webview_url_data_monitor_filter">Filter</string>
+    <string name="webview_url_data_monitor_filter_strings">Filter Strings</string>
+    <string name="webview_url_data_monitor_regular_expression">Regular Expression</string>
+    <string name="webview_url_data_monitor_show_js_urls">Show JavaScript URLs</string>
+    <string name="webview_url_data_monitor_show_override_url">Show Override URL Loading</string>
+    <string name="webview_url_data_monitor_url_decode">URL Decode</string>
+    <string name="webview_url_data_filter_list">URL Data Filter List</string>
+    <string name="show_webview_source_code">Show WebView Source Code</string>
+    <string name="show_webview_iframe_source_code">Show IFrame Source Code</string>
+    <string name="show_webview_source_code_filter">Source Code Filter</string>
+    <string name="show_webview_source_code_filter_strings">Source Filter Strings</string>
+    <string name="show_webview_source_code_regular_expression">Source Code Regular Expression</string>
+    <string name="webview_cookies">WebView Cookies</string>
+    <string name="webview_override_url_loading_list">Override URL Loading List</string>
+    <string name="remove_all_cookies">Remove All Cookies</string>
+    
+    <!-- System Settings -->
+    <string name="skip_dialogs_strings">Skip Dialogs Strings</string>
+    <string name="skip_dialogs_stacktrace_strings">Skip Dialogs Stacktrace Strings</string>
+    <string name="skip_dialogs_monitor_stacktraces">Monitor Dialog Stacktraces</string>
+    <string name="override_shared_preferences">Override Shared Preferences</string>
+    <string name="override_shared_preferences_enable_placeholders">Enable Placeholders</string>
+    <string name="custom_build_props">Custom Build Props</string>
+    <string name="custom_build_props_file">Custom Build Props File</string>
+    <string name="custom_build_props_file_enable_placeholders">Enable Placeholders</string>
+    <string name="hosts_blocker">Hosts Blocker</string>
+    <string name="hosts_blocker_block_by_default">Block by Default</string>
+    <string name="hosts_blocker_show_notification">Show Notification</string>
+    <string name="hosts_blocker_use_file">Use File</string>
+    <string name="hosts_blocker_file_content">File Content</string>
+    <string name="hosts_blocker_allow_all_other_hosts">Allow All Other Hosts</string>
+    <string name="add_permissions">Add Permissions</string>
+    <string name="add_providers">Add Providers</string>
+    <string name="add_receivers">Add Receivers</string>
+    <string name="add_services">Add Services</string>
+    <string name="add_activities">Add Activities</string>
+    <string name="strings_properties">Strings Properties</string>
+    <string name="serial_format">Serial Format</string>
+    
+    <!-- Install Time Settings -->
+    <string name="change_install_update_time">Change Install/Update Time</string>
+    <string name="custom_install_update_time">Custom Install/Update Time</string>
+    <string name="randomize_user_creation_time">Randomize User Creation Time</string>
+    <string name="relative_install_update_time">Relative Install/Update Time</string>
+    <string name="relative_install_update_time_unit">Time Unit</string>
+    
+    <!-- Network Settings -->
+    <string name="dns_over_https">DNS over HTTPS</string>
+    <string name="dns_over_https_custom_url">Custom URL</string>
+    <string name="dns_over_https_silent">Silent</string>
+    
+    <!-- Extra Settings -->
+    <string name="add_snow">Add Snow</string>
+    <string name="snow">Snow</string>
+    <string name="picture_in_picture_support">Picture in Picture Support</string>
+    <string name="picture_in_picture">Picture in Picture</string>
+    
+    <!-- Menu Items -->
+    <string name="action_load">Load Configuration</string>
+    <string name="action_export">Export Configuration</string>
+    <string name="action_import">Import Configuration</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    
+    <!-- Dialog Titles -->
+    <string name="select_device_profile">Select Device Profile</string>
+    <string name="select_path">Select Path</string>
+    <string name="enter_path">Enter Path</string>
+    <string name="path_hint">/storage/emulated/0/</string>
+    
+    <!-- Messages -->
+    <string name="configuration_saved">✅ Configuration saved successfully!</string>
+    <string name="configuration_failed_save">❌ Failed to save configuration</string>
+    <string name="configuration_loaded">📥 Configuration loaded</string>
+    <string name="configuration_exported">📤 Configuration exported</string>
+    <string name="configuration_imported">📥 Configuration imported</string>
+    <string name="path_selected">Selected path: %1$s</string>
+    <string name="device_profile_selected">Selected device profile: %1$s</string>
+    <string name="random_location_generated">🎲 Random location generated</string>
+    <string name="package_name_required">Package name required</string>
+    <string name="save_cancelled">Save cancelled</string>
+    
+    <!-- Input Types and Validation -->
+    <string name="enter_value">Enter value...</string>
+    <string name="enter_number">Enter number...</string>
+    <string name="enter_text">Enter text...</string>
+    <string name="enter_regular_expression">Enter regular expression...</string>
+    <string name="enter_app_data_path">Enter app data path...</string>
+    <string name="enter_password">Enter password...</string>
+    <string name="one_item_per_line">Enter one item per line...</string>
+    <string name="invalid_path">Invalid path</string>
+    <string name="path_not_found">Path not found</string>
+    
+    <!-- Filter and Sort Options -->
+    <string name="filter_disabled">DISABLED</string>
+    <string name="filter_include">INCLUDE</string>
+    <string name="filter_exclude">EXCLUDE</string>
+    <string name="compatibility_permissive">PERMISSIVE</string>
+    <string name="compatibility_restrictive">RESTRICTIVE</string>
+    <string name="time_unit_days">days</string>
+    <string name="time_unit_weeks">weeks</string>
+    <string name="time_unit_months">months</string>
+    
+    <!-- Placeholder and Default Values -->
+    <string name="not_set">Not set</string>
+    <string name="disabled">Disabled</string>
+    <string name="enabled">Enabled</string>
+    <string name="custom">Custom</string>
+    <string name="select_from_list">Select from list...</string>
+    <string name="select_device_to_autofill">Select a device to auto-fill...</string>
+    <string name="no_devices_match_filters">No devices match the current filters.</string>
+    
+    <!-- Status and Progress -->
+    <string name="saving">⏳ Saving...</string>
+    <string name="loading">⏳ Loading...</string>
+    <string name="processing">⏳ Processing...</string>
+    <string name="success">✅ Success</string>
+    <string name="failed">❌ Failed</string>
+    
+    <!-- Content Descriptions -->
+    <string name="expand_category">Expand category</string>
+    <string name="collapse_category">Collapse category</string>
+    <string name="edit_setting">Edit setting</string>
+    <string name="select_path_content">Select path</string>
+    <string name="generate_random_value">Generate random value</string>
+    <string name="remove_item">Remove item</string>
+    <string name="add_item">Add item</string>
+</resources>

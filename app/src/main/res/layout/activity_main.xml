@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- Search Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/search_background"
+            android:elevation="4dp"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/search_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_input_background"
+                android:drawableEnd="@drawable/ic_search"
+                android:drawablePadding="12dp"
+                android:hint="Search features..."
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:layout_margin="4dp" />
+
+        </LinearLayout>
+
+        <!-- Package Info Container -->
+        <LinearLayout
+            android:id="@+id/package_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/package_info_background"
+            android:padding="16dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📦 Package:"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/package_name_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not detected"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔢 Split Count:"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/split_count_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="101"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary" />
+
+        </LinearLayout>
+
+        <!-- Loading Indicator -->
+        <ProgressBar
+            android:id="@+id/loading_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="24dp"
+            android:visibility="gone" />
+
+        <!-- Error Message -->
+        <TextView
+            android:id="@+id/error_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Error loading configuration"
+            android:textColor="@color/error_red"
+            android:background="@color/error_background"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+            android:textSize="14sp" />
+
+        <!-- Categories Recycler View -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categories_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/item_category" />
+
+    </LinearLayout>
+
+    <!-- Floating Action Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/save_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:contentDescription="Save Settings"
+        app:srcCompat="@drawable/ic_save"
+        app:tint="@color/white" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

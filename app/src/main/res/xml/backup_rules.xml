@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Include app preferences -->
+    <include domain="sharedpref" path="AppCloneMakerPrefs.xml"/>
+    
+    <!-- Include configuration files -->
+    <include domain="file" path="configs/"/>
+    <include domain="file" path="backups/"/>
+    
+    <!-- Include device profiles cache -->
+    <include domain="file" path="device_profiles/"/>
+    
+    <!-- Exclude temporary and cache files -->
+    <exclude domain="file" path="cache/"/>
+    <exclude domain="file" path="temp/"/>
+    <exclude domain="file" path="logs/"/>
+    <exclude domain="file" path="tmp/"/>
+    
+    <!-- Exclude system files -->
+    <exclude domain="file" path=".nomedia"/>
+    <exclude domain="file" path=".DS_Store"/>
+    
+    <!-- Exclude sensitive data that shouldn't be backed up -->
+    <exclude domain="sharedpref" path="temp_prefs.xml"/>
+    <exclude domain="file" path="private/"/>
+</full-backup-content>

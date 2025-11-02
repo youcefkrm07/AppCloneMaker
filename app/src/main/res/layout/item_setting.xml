@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setting_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:minHeight="56dp"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/setting_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setting Name"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Additional description for complex settings -->
+        <TextView
+            android:id="@+id/setting_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setting description"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/setting_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/setting_value_background"
+        android:maxWidth="200dp"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:text="Value"
+        android:textColor="@color/primary_blue"
+        android:textSize="14sp"
+        android:textStyle="500"
+        tools:text="Enabled" />
+
+    <!-- Status indicators for different setting types -->
+    <ImageView
+        android:id="@+id/setting_status_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:contentDescription="Status"
+        android:src="@drawable/ic_status_indicator"
+        android:visibility="gone"
+        tools:src="@drawable/ic_check_circle"
+        tools:visibility="visible" />
+
+</LinearLayout>

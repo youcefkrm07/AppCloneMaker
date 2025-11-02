@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="24dp"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <!-- Dialog Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_header_background"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/editor_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit Setting"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/editor_close_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="Close"
+            android:focusable="true"
+            android:src="@drawable/ic_close"
+            android:tint="@color/text_secondary" />
+
+    </LinearLayout>
+
+    <!-- Dialog Body -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:maxHeight="400dp">
+
+        <LinearLayout
+            android:id="@+id/editor_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Editor controls will be added dynamically here -->
+
+            <!-- Info Text (optional) -->
+            <TextView
+                android:id="@+id/editor_info_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Additional information about this setting"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- File Status (for file-related settings) -->
+            <TextView
+                android:id="@+id/editor_file_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="File status information"
+                android:textColor="@color/primary_blue"
+                android:textSize="14sp"
+                android:fontFamily="500"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Dialog Footer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_footer_background"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/editor_cancel_btn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Cancel"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/editor_save_btn"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_blue"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
