@@ -100,7 +100,7 @@ dependencies {
     implementation 'com.github.droidianLinux:android-file-chooser:1.0.0'
     
     // Icon Packs (for future enhancement)
-    implementation 'com.github/pm cómoda:android-iconify:2.2.2'
+    implementation 'com.joanzapata.iconify:android-iconify-fontawesome:2.2.2'
     
     // ZXing for QR code generation (future feature)
     implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
