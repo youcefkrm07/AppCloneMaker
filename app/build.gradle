@@ -88,7 +88,6 @@ dependencies {
     
     // Dialog and Bottom Sheet
     implementation 'com.google.android.material:material:1.11.0'
-    implementation 'com.github.flipboard-boxer:boxer:2.1.0'
     
     // Progress Indicators
     implementation 'com.github.skydoves:progressview:1.1.3'
